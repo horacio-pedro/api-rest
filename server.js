@@ -4,6 +4,7 @@ const requireDir = require('require-dir')
 
 // App Start
 const app = express()
+app.use(express.json())
 
 // DataBase
     // Mongoose
