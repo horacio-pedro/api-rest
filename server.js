@@ -11,7 +11,7 @@ app.use(cors())
 // DataBase
     // Mongoose
     mongoose.Promise = global.Promise
-    mongoose.connect(" mongodb://127.0.0.1:27017/apirest", 
+    mongoose.connect("mongodb://api:API2019@cluster0-shard-00-00-rxknu.mongodb.net:27017,cluster0-shard-00-01-rxknu.mongodb.net:27017,cluster0-shard-00-02-rxknu.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority", 
     { useNewUrlParser: true }).then(function(){
         console.log("DataBase Conected")
     }).catch(function(err){
